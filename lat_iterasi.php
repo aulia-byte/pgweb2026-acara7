@@ -1,21 +1,24 @@
 <?php
-$i = 1; // Initialize counter
-while ($i < 5 ) { // Check condition
-  echo $i; // Execute code
-  $i = $i + 1; //$i++; 
+// 1. While Loop
+$i = 150; 
+while ($i < 170) {
+    echo $i . "<br>";
+    $i = $i + 2;
 }
 
-for ($x = 1; $x <10; $x++) {
-  echo "The number is: $x <br>";
+echo "<br>";
+
+// 2. For Loop
+for ($x = 1329; $x < 1340; $x++) {
+    echo "Nomor keberuntungan hari ini: $x <br>";
 }
 
-$colors = array("red", "green", "blue", "yellow");
+echo "<br>";
+
+// 3. Foreach Loop
+$colors = array("ungu", "biru", "pink", "kuning", "merah", "hijau");
 
 foreach ($colors as $value) {
-  echo "$value <br>";
+    echo "Kertas Warna $value <br>";
 }
-
-//for  ($i=0; $i<=3; $i++){
-    //echo $colors [$i]. "<br>"
-//}
 ?>

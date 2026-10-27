@@ -1,25 +1,17 @@
 <?php
-$x = 100;
-$y = 50;
+$Siswa = array("Aulia", "Daffa", "Azhar", "Eli" ,"Ela", "Alex");
+$skorTes =67; 
 
-if($x == 100 && $y == 50) {
-    echo "Keluar Sini <br>";
-}
-
-echo "Program Selesai";
-
-if ($x == 100 && $y == 50) {
-  echo "Have a good day!";
+if ($skorTes >= 80) {
+    $kelas = "Kelas Unggulan";
+} elseif ($skorTes >= 75) {
+    $kelas = "Kelas Reguler (A)";
+} elseif ($skorTes >= 60) {
+    $kelas = "Kelas Reguler (B)";
 } else {
-  echo "Have a good night!";
+    $kelas = "Kelas Reguler (C)";
 }
 
-if ($x == 100 && $y == 50) {
-  echo "Have a good morning!";
-} elseif ($x == 100) {
-  echo "Have a good day!";
-} else {
-  echo "Have a good night!";
-}
-
+echo "Skor Tes Kelas: $skorTes <br>";
+echo "$Siswa[5] masuk ke: $kelas";
 ?>

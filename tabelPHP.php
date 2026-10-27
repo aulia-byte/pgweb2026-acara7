@@ -5,29 +5,35 @@ $luas            = ["27,62", "26,63", "26,84", "29,25", "27,27"];
 $jumlah_penduduk = ["31497", "47129", "72028", "108675", "29886"];
 ?>
 
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Tabel Data Penduduk</title>
-</head>
-<body>
-
 <table border="1">
     <tr>
         <th>Kecamatan</th>
         <th>Luas (Km2)</th>
         <th>Jumlah Penduduk</th>
     </tr>
-    <?php foreach ($kecamatan as $i => $nama_kecamatan): ?>
     <tr>
-        <td><?= $nama_kecamatan; ?></td>
-        <td><?= $luas[$i]; ?></td>
-        <td><?= $jumlah_penduduk[$i]; ?></td>
+        <td><?= $kecamatan[0]; ?></td>
+        <td><?= $luas[0]; ?></td>
+        <td><?= $jumlah_penduduk[0]; ?></td>
     </tr>
-    <?php endforeach; ?>
+    <tr>
+        <td><?= $kecamatan[1]; ?></td>
+        <td><?= $luas[1]; ?></td>
+        <td><?= $jumlah_penduduk[1]; ?></td>
+    </tr>
+    <tr>
+        <td><?= $kecamatan[2]; ?></td>
+        <td><?= $luas[2]; ?></td>
+        <td><?= $jumlah_penduduk[2]; ?></td>
+    </tr>
+    <tr>
+        <td><?= $kecamatan[3]; ?></td>
+        <td><?= $luas[3]; ?></td>
+        <td><?= $jumlah_penduduk[3]; ?></td>
+    </tr>
+    <tr>
+        <td><?= $kecamatan[4]; ?></td>
+        <td><?= $luas[4]; ?></td>
+        <td><?= $jumlah_penduduk[4]; ?></td>
+    </tr>
 </table>
-
-</body>
-</html>
